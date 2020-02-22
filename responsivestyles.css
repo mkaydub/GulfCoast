@@ -1,0 +1,149 @@
+@media only screen and (min-width:320px) and (max-width:480px){
+
+
+h1{
+  font-size:30px;
+}
+.hero-over{
+display:none;
+}
+
+.hero-text {
+  margin:auto;
+  width:100%;
+ overflow: hidden;
+ padding:1rem;
+}
+}
+/* Responsive Design for 1024px-1440px*/
+@media only screen and (min-width:1024px) and (max-width:1440px){
+.hero-text h1{
+  font-size:40px;
+}
+.arrowText{
+  margin-top:-10px;
+}
+.rightcolumncont-text p {
+  font-size:21px;
+}
+.blueContainer h2 {
+  width:60%;
+}
+.darkblueContainer {
+      padding: 2rem 1rem 1rem;
+}
+.darkblueContainer p {
+    width: 69%;
+    padding: 0rem 2rem 0rem;
+    font-size: 20px;
+}
+.darkblueContainer ul {
+    padding: 0rem 2rem 1rem;
+}
+.orangeArrowText {
+    padding: 1.5rem 1rem 0rem;
+        font-size: 20px;
+    color: #fff;
+    text-align: center;
+    font-weight: 500;
+    line-height: 1.1;
+    margin-top: -10px;
+  }
+  .orangeArrow{
+        padding: 0.4rem 0rem 4.4rem 0rem;
+  }
+  .orangeArrow h2 {
+        padding: 0.4rem 4rem 0rem;
+        text-align:center;
+  }
+  .bottom-section h2{
+        padding: 0rem 3rem 0rem;
+        font-size:34px;
+        margin-bottom: 0;
+    margin-top: 0;
+  }
+  .bottom-section p {
+    padding: 0rem 3rem 0rem;
+    font-size: 18px;
+  }
+  .bottom-section h3{
+    font-size:25px;
+    width:22%;
+  }
+}
+@media only screen and (max-width:768px){
+.arrowText{
+  margin-top: -20px;
+      width: 100%;
+}
+.hero-text h1 {
+  font-size:34px;
+}
+.hero-text p {
+  font-size:22px;
+}
+.dSBox{
+  background: #fff;
+  min-width:767px;
+  margin: -5px auto;
+}
+.blueContainer h2 {
+    font-size: 32px;
+    width: 75%;
+  }
+  .blueContainer p {
+    width: 100%;
+  }
+  .col-3qt{
+    width:100%;
+  }
+  .darkblueContainer p {
+    text-align: center;
+    width: 75%;
+    font-size: 20px;
+    margin: auto;
+}
+.ul-columns{
+  width: 100%;
+  padding: 0.5rem 2rem;
+}
+.darkblueContainer ul {
+    padding: 0rem 1rem;
+}
+.orangeArrow{
+  margin-top:0;
+  margin-left:0;
+  padding:1rem;
+  height:100%;
+}
+.bottom-section{
+  background-image:none;
+  text-align: center;
+  margin:2rem auto;
+}
+.bottom-section h2{
+  margin: 0 auto!important;
+  padding:0;
+  width: 90%;
+  text-align:center;
+  float:none;
+}
+.bottom-section p {
+  width:80%;
+  text-align: center;
+  padding:0;
+  margin:1rem auto;
+  float:none;
+}
+.bottom-section h3{
+  text-align: center;
+  width: 80%;
+  margin:1rem auto;
+  float:none;
+  padding:0;
+}
+.tri-img{
+  display:block;
+}
+
+}

@@ -1,0 +1,402 @@
+#ctl00 > img {
+  display:none;
+}
+
+body {
+  margin:0;
+  font-family:'Proxima Nova',sans-serif;
+  font-size: 16px;
+  width:100%;
+}
+
+h1 {
+  text-align:center;
+  font-family:Proxima Nova;
+  font-size:54px;
+  color:#fff;
+  font-weight: 400;
+}
+
+main {
+  background-color: #fff;
+    min-height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero {
+  z-index: 1;
+  margin:0;
+  position: relative;
+  background-position: center;
+  background-size:cover;
+  background-image:url('assets/CareerSourceGulfCoast(131).jpg');
+}
+
+.hero-over{
+  margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    position: relative;
+    z-index: 3;
+}
+
+.hero-over img {
+position: absolute;
+bottom: 0;
+right:0;
+}
+
+.hero-text {
+  padding-left:5rem;
+  padding-top:4rem;
+  padding-bottom:5rem;
+  width:35%;
+  text-align:center;
+}
+.hero-button {
+  text-align:center;
+  font-size:20px;
+  color:#fff;
+  letter-spacing:.1rem;
+  text-transform:uppercase;
+  padding:10px 15px;
+  background:none;
+  border:1px solid #fff;
+  border-radius:25px;
+}
+
+.position-relative{
+  position: relative;
+}
+
+.hero-tag {
+  text-align:center;
+  font-family:Proxima Nova;
+  font-size:28px;
+  color:#fff;
+  font-style:italic;
+  font-weight:300;
+  margin:0.5rem;
+}
+
+.blueContain {
+  height:10%;
+}
+
+.blueArrow{
+	position: relative;
+	background: #0D57AD;
+	border: 4px solid #0D57AD;
+  width:100%;
+  position: relative;
+	background: #0D57AD;
+	border: 4px solid #0D57AD;
+  width:50%;
+  margin-top:-35px;
+  padding: 2.4rem;
+  height:100px;
+  z-index:3;
+}
+.blueArrow:after, .blueArrow:before {
+  left: 100.25%;
+	top: 50%;
+	border: solid transparent;
+	content: "";
+	height: 0;
+	width: 0;
+	position: absolute;
+
+}
+
+.blueArrow:after {
+	border-color: rgba(13, 87, 173, 0);
+	border-left-color: #0D57AD;
+	border-width: 88px;
+  margin-top:-88px;
+}
+.blueArrow:before {
+	border-color: rgba(13, 87, 173, 0);
+	border-left-color: #0D57AD;
+	border-width: 94px;
+	margin-top: -94px;
+}
+.arrowText {
+  margin:1rem;
+  color:#fff;
+  line-height: 1.4;
+}
+.dSBox{
+  background:#fff;
+  width:70%;
+  margin:-26px auto;
+  position:relative;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+  z-index:4;
+  display:flex;
+}
+
+.column-container {
+  padding:1.8rem;
+  width:64%;
+}
+.threecolumn{
+  display: flex;
+  flex-direction: row;
+  vertical-align: middle;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.col {
+  padding:.5rem;
+  width:20%;
+  vertical-align: middle;
+  text-align: center;
+  height:200px;
+}
+.icon {
+  margin:0px auto;
+}
+
+.icon-text{
+  color:#595959;
+  margin:10px auto;
+  font-weight: 600;
+  width:100%;
+}
+.rightcolumncont {
+  float:right;
+  width:34%;
+  margin-top:2rem;
+}
+.rightcolumncont-text{
+  width:80%;
+  text-align: center;
+}
+.rightcolumncont-text p {
+  font-size:22px;
+  font-weight:600;
+  width:90%;
+  margin:20% auto 5% auto;
+  color:#75AB45;
+}
+.rightcolumncont-text a {
+  color:#75AB45;
+  text-decoration: none;
+  white-space: nowrap;
+}
+p.rightcolumnaddress {
+  color:#595959;
+  font-weight:350;
+  margin-top:0;
+  width:90%;
+
+}
+
+.video-section {
+  margin:8% auto;
+}
+.grad {
+    background: #fe5e00;
+    background: -webkit-linear-gradient(left,#ff9e19,#fe5e00);
+    background: -o-linear-gradient(right,#ff9e19,#fe5e00);
+    background: -moz-linear-gradient(right,#ff9e19,#fe5e00);
+    background: linear-gradient(to right,#ff9e19,#fe5e00);
+}
+.WhiteNoU {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 16px;
+}
+.button {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    /* background: #c22534; */
+    padding: 15px 35px 15px 35px;
+    border-radius: 25px;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+}
+
+.btn-box{
+  margin-top:3rem;
+}
+
+.supporting-section{
+  width:100%;
+  background-image:url('Assets/CareerSourceGulfCoastdesk.jpg');
+  position:relative;
+  right:0;
+  top:0;
+  margin:0;
+  padding:0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.col-3qt {
+  width:63%;
+}
+.blueContainer{
+  background-color:#009EDC;
+  color:#fff;
+  margin:0;
+  height:100%;
+  padding:3rem 4rem 2rem;
+}
+.blueContainer h2 {
+  font-size:36px;
+  width:40%;
+  margin:0;
+}
+.blueContainer p {
+  width:90%;
+  font-size:16px;
+  line-height: 1.4;
+}
+.darkblueContainer{
+  background-color:#005BA9;
+  color:#fff;
+  padding:2rem 4rem 1rem;
+  height:100%;
+}
+.darkblueContainer h2 {
+  font-size:24px;
+  width:70%;
+  margin:0 auto;
+  text-align: center;
+}
+.darkblueContainer h2 a{
+color:#fff;
+}
+.darkblueContainer p {
+  width: 50%;
+  padding: 0rem 3rem 0rem;
+  font-size: 20px;
+
+}
+.darkblueContainer-button {
+  text-align:center;
+  font-size:20px;
+  color:#fff;
+  letter-spacing:.1rem;
+  text-transform:uppercase;
+  padding:10px 15px;
+  background:none;
+  border:1px solid #fff;
+  border-radius:25px;
+  margin:1rem;
+}
+.darkBlueheading-text{
+  margin:auto;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.darkblueContainer ul {
+  padding:0rem 4rem 1rem;
+  line-height: 1.4;
+}
+.ul-columns{
+  width:100%;
+  display:flex;
+  flex-direction: row;
+}
+.ul-colunn{
+  width:50%;
+}
+.orangeArrow{
+	position: relative;
+	background: #E86124;
+	border: 4px solid #E86124;
+  margin-top:-35px;
+  padding: 2.4rem;
+  height:100px;
+  z-index:3;
+  right:0;
+  margin-left:45%;
+}
+.orangeArrow:after, .orangeArrow:before {
+  right: 100.25%;
+	top: 50%;
+	border: solid transparent;
+	content: "";
+	height: 0;
+	width: 0;
+	position: absolute;
+
+}
+
+.orangeArrow:before {
+	border-color: rgba(13, 87, 173, 0);
+	border-right-color: #E86124;
+	border-width: 88px;
+  margin-top:-88px;
+}
+.orangeArrow:before {
+	border-color: rgba(13, 87, 173, 0);
+	border-right-color: #E86124;
+	border-width: 94px;
+	margin-top: -94px;
+}
+.orangeArrow h2{
+  font-family: 'Proxima Nova',sans-serif;
+    padding: 0rem 3rem 0rem;
+color: #fff;
+font-size: 36px;
+margin: 0;
+line-height: 1;
+}
+.orangeArrowText {
+  padding: 0rem 3rem 0rem;
+  font-size: 20px;
+  color:#fff;
+  text-align:center;
+  font-weight:500;
+  line-height: 1.4;
+}
+.orangeArrowText a{
+  color:#fff;
+
+}
+.bottom-section{
+  margin-top:4rem;
+  background-image: url('Assets/CareerSourceGulfCoastTriangleImage.png');
+  position:relative;
+  background-repeat: no-repeat;
+  background-size:80%;
+}
+.bottom-section h2{
+  text-align: right;
+  width:30%;
+  padding: 2rem 3rem 1rem;
+  color: #595959;
+  font-size:40px;
+  float:right;
+}
+.bottom-section p {
+  text-align: right;
+  width:30%;
+  padding: 0rem 3rem 0rem;
+  color: #595959;
+  font-size:20px;
+  float:right;
+  clear: both;
+  line-height: 1.4;
+}
+.bottom-section h3{
+  color:#75AB45;
+  text-align: right;
+  width:25%;
+  padding: 0rem 3rem 0rem;
+
+  font-size:30px;
+  float:right;
+  clear: both;
+}
+.tri-img{
+  display:none;
+}
