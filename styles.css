@@ -11,7 +11,7 @@ body {
 
 h1 {
   text-align:center;
-  font-family:'Proxima Nova';
+  font-family:Proxima Nova;
   font-size:54px;
   color:#fff;
   font-weight: 400;
@@ -26,12 +26,12 @@ main {
 }
 
 .hero {
-  z-index: 1;
+  z-index: 2;
   margin:0;
   position: relative;
   background-position: center;
   background-size:cover;
-  background-image:url('Assets/CareerSourceGulfCoast(131).jpg');
+  background-image:url('assets/CareerSourceGulfCoast(131).jpg');
 }
 
 .hero-over{
@@ -41,7 +41,7 @@ main {
     font-size: 100%;
     font: inherit;
     position: relative;
-    z-index: 3;
+    z-index: 2;
 }
 
 .hero-over img {
@@ -56,6 +56,7 @@ right:0;
   padding-bottom:5rem;
   width:35%;
   text-align:center;
+  z-index: 4;
 }
 .hero-button {
   text-align:center;
@@ -67,6 +68,7 @@ right:0;
   background:none;
   border:1px solid #fff;
   border-radius:25px;
+  z-index: 6;
 }
 
 .position-relative{
@@ -97,12 +99,13 @@ right:0;
 	border: 4px solid #0D57AD;
   width:50%;
   margin-top:-35px;
-  padding: 2.4rem;
+  padding: 2.4rem 0;
   height:100px;
   z-index:3;
+  margin-right:0;
 }
 .blueArrow:after, .blueArrow:before {
-  left: 100.25%;
+  left: 100%;
 	top: 50%;
 	border: solid transparent;
 	content: "";
@@ -186,7 +189,6 @@ right:0;
 .rightcolumncont-text a {
   color:#75AB45;
   text-decoration: none;
-  white-space: nowrap;
 }
 p.rightcolumnaddress {
   color:#595959;
@@ -198,6 +200,7 @@ p.rightcolumnaddress {
 
 .video-section {
   margin:8% auto;
+
 }
 .grad {
     background: #fe5e00;
@@ -227,7 +230,7 @@ p.rightcolumnaddress {
 
 .supporting-section{
   width:100%;
-  background-image:url('Assets/CareerSourceGulfCoastDesk.jpg');
+  background-image:url('Assets/CareerSourceGulfCoastdesk.jpg');
   position:relative;
   right:0;
   top:0;
@@ -313,14 +316,15 @@ color:#fff;
 	background: #E86124;
 	border: 4px solid #E86124;
   margin-top:-35px;
-  padding: 2.4rem;
+  margin-right:0;
+  padding: 2.4rem 0;
   height:100px;
   z-index:3;
   right:0;
   margin-left:45%;
 }
 .orangeArrow:after, .orangeArrow:before {
-  right: 100.25%;
+  right: 100%;
 	top: 50%;
 	border: solid transparent;
 	content: "";
@@ -344,14 +348,14 @@ color:#fff;
 }
 .orangeArrow h2{
   font-family: 'Proxima Nova',sans-serif;
-    padding: 0rem 3rem 0rem;
+    padding: 0rem 2rem 0rem;
 color: #fff;
 font-size: 36px;
 margin: 0;
 line-height: 1;
 }
 .orangeArrowText {
-  padding: 0rem 3rem 0rem;
+  padding: 0rem 2rem 0rem;
   font-size: 20px;
   color:#fff;
   text-align:center;
@@ -398,5 +402,13 @@ line-height: 1;
   clear: both;
 }
 .tri-img{
+  display:none;
+  max-width: 100%;
+}
+.mobile-column {
+  display:none;
+}
+
+.bottomPhotoMobile {
   display:none;
 }
