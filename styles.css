@@ -11,7 +11,7 @@ body {
 
 h1 {
   text-align:center;
-  font-family:Proxima Nova;
+  font-family:'Proxima Nova';
   font-size:54px;
   color:#fff;
   font-weight: 400;
@@ -254,7 +254,7 @@ button:hover{
 
 .supporting-section{
   width:100%;
-  background-image:url('Assets/CareerSourceGulfCoastdesk.jpg');
+  background-image:url('Assets/CareerSourceGulfCoastDesk.jpg');
   position:relative;
   right:0;
   top:0;
