@@ -295,6 +295,9 @@ width:50%;
 text-align: center;
   padding:0;
 }
+.darkblueContainer ul {
+padding:0.2rem;
+}
 .video-section{
   margin:0 auto;
 }
