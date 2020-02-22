@@ -11,7 +11,7 @@ body {
 
 h1 {
   text-align:center;
-  font-family:Proxima Nova;
+  font-family:'Proxima Nova';
   font-size:54px;
   color:#fff;
   font-weight: 400;
@@ -31,7 +31,7 @@ main {
   position: relative;
   background-position: center;
   background-size:cover;
-  background-image:url('assets/CareerSourceGulfCoast(131).jpg');
+  background-image:url('Assets/CareerSourceGulfCoast(131).jpg');
 }
 
 .hero-over{
