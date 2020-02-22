@@ -11,7 +11,7 @@ body {
 
 h1 {
   text-align:center;
-  font-family:'Proxima Nova';
+  font-family:Proxima Nova;
   font-size:54px;
   color:#fff;
   font-weight: 400;
@@ -30,7 +30,7 @@ main {
   position: relative;
   background-position: center;
   background-size:cover;
-  background-image:url('Assets/CareerSourceGulfCoast(131).jpg');
+  background-image:url('assets/CareerSourceGulfCoast(131).jpg');
 }
 
 .hero-over{
@@ -68,6 +68,10 @@ right:0;
   border:1px solid #fff;
   border-radius:25px;
   z-index: 6;
+}
+.hero-button a {
+  color:#fff;
+  text-decoration:none;
 }
 
 .position-relative{
@@ -213,6 +217,10 @@ p.rightcolumnaddress {
     text-decoration: none;
     font-size: 16px;
 }
+
+.WhiteNoU a{
+  color:#fff;
+}
 .button {
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -222,14 +230,31 @@ p.rightcolumnaddress {
     -moz-border-radius: 25px;
     -webkit-border-radius: 25px;
 }
+button a {
+  color:#fff;
+  text-decoration: none;
+}
 
+a {
+  color:#fff;
+}
+.darkblueContainer-button a{
+  color:#fff;
+  text-decoration: none;
+}
+button:hover{
+  background-color:#669D30;
+  color:#fff;
+  text-decoration: none;
+}
 .btn-box{
   margin-top:3rem;
 }
 
+
 .supporting-section{
   width:100%;
-  background-image:url('Assets/CareerSourceGulfCoastDesk.jpg');
+  background-image:url('Assets/CareerSourceGulfCoastdesk.jpg');
   position:relative;
   right:0;
   top:0;
