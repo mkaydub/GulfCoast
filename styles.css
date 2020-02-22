@@ -26,7 +26,6 @@ main {
 }
 
 .hero {
-  z-index: 2;
   margin:0;
   position: relative;
   background-position: center;
