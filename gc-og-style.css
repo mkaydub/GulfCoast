@@ -1,0 +1,804 @@
+.grad {
+  background: #fe5e00; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left,#ff9e19,#fe5e00); /*Safari 5.1-6*/
+  background: -o-linear-gradient(right,#ff9e19,#fe5e00); /*Opera 11.1-12*/
+  background: -moz-linear-gradient(right,#ff9e19,#fe5e00); /*Fx 3.6-15*/
+  background: linear-gradient(to right,#ff9e19,#fe5e00); /*Standard*/
+}
+.grad:hover {
+  background: #ff9e19; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left,#fe5e00,#ff9e19); /*Safari 5.1-6*/
+  background: -o-linear-gradient(right,#fe5e00,#ff9e19); /*Opera 11.1-12*/
+  background: -moz-linear-gradient(right,#fe5e00,#ff9e19); /*Fx 3.6-15*/
+  background: linear-gradient(to right,#fe5e00,#ff9e19); /*Standard*/
+}
+
+hr {
+	border: 0;
+	margin: 50px 0 50px 0;
+	height: 1px;
+	background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
+}
+.summ-1{
+width:100%;
+}
+
+.summ-1:hover{
+}
+
+.redBanner:hover{
+display: block;
+vertical-align:bottom;
+}
+
+.summ-1 p{
+color:#FFFFFF;
+font-size:18px;
+font:"Roboto";
+padding-left: 18px;
+}
+
+.summ-1 p:hover {
+color:#ffffff;
+}
+
+.summ-1 h3{
+color:#FFFFFF;
+font-weight:700;
+padding-left: 18px;
+}
+
+.summ-1 h3:hover, .summ-1 h3:visited, .summ-1 h3:active{
+color:#ffffff;
+}
+
+.form-field {
+	font-family: Roboto;
+	font-size: 20px;
+	color: #a7a9ac;
+	padding-left: 10px;
+	border: 1px solid #a7a9ac;
+	}
+
+.overlay {
+   background: transparent;
+   position: relative;
+   width:100%;
+   height:500px; /* your iframe height */
+   top:500px;  /* your iframe height */
+   margin-top:-500px;  /* your iframe height */
+}
+
+.slider-title .cta-button {
+	position: relative;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	background: #50b948;
+	padding: 15px 30px 15px 30px;
+	border: 0;
+	border-radius: 6px;
+		-moz-border-radius: 6px;
+		-webkit-border-radius: 6px;
+	box-shadow: 0px 5px 0px #44a140;
+		-webkit-box-shadow: 0px 5px 0px #44a140;
+        -moz-box-shadow: 0px 5px 0px #44a140; }
+
+.slider-title .cta-button:hover {
+	position: relative;
+	background: #7ccb76;
+	padding: 15px 30px 15px 30px;
+	border: 0;
+	border-radius: 6px;
+		-moz-border-radius: 6px;
+		-webkit-border-radius: 6px;
+	box-shadow: 0px 5px 0px #44a140;
+		-webkit-box-shadow: 0px 5px 0px #44a140;
+        -moz-box-shadow: 0px 5px 0px #44a140; }
+
+.postthumb {
+	text-align: center;}
+
+.nav a:link, .nav a:active, .nav a:visited {
+	color: #898989;
+	text-decoration:none;
+	font-size: 18px;
+	font-family: 'Titillium Web', sans-serif;
+	font-weight: 400; }
+
+.nav a:hover {
+	text-decoration: none;
+	color: #fe5e00 ; }
+
+.header-logo {
+	float: left;
+	position: absolute; }
+
+.header-buttons {
+	width: 700px; }
+
+.header-apply a:link, .header-apply a:visited, .header-apply a:active {
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	float: right;
+	valign: center;
+	background: #007db1;
+	padding: 15px 30px 15px 30px;
+	border-radius: 0 0 0 10px;
+	-moz-border-radius: 0 0 0 10px;
+	-webkit-border-radius: 0 0 0 10px;
+	border: 0; }
+
+.header-apply a:hover {
+	background: #409ec5; }
+
+.header-volunteer a:link, .header-volunteer a:visited, .header-volunteer a:active {
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	float: right;
+	valign: center;
+	background: #ea7f1e;
+	padding: 15px 30px 15px 30px;
+	border: 0; }
+
+.header-volunteer a:hover {
+	background: #ef9f56; }
+
+.header-donate a:link, .header-donate a:visited, .header-donate a:active {
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	float: right;
+	valign: center;
+	background: #50b948;
+	padding: 15px 30px 15px 30px;
+	border-radius: 0 0 10px 0;
+	-moz-border-radius: 0 0 10px 0;
+	-webkit-border-radius: 0 0 10px 0;
+	border: 0; }
+
+.header-donate a:hover {
+	background: #7ccb76; }
+
+.header {
+	width: 1180px;
+	margin: 0 auto; }
+
+.slider-title {
+	width: 100%;
+	position: absolute;
+	text-align: center;
+	margin-top: 140px; }
+
+.mapwrapper {
+	position: relative;}
+
+.mapinfo {
+	position: absolute;
+	background-color: #FFF;
+	z-index: 99;
+	padding-top: 40px;
+	text-align: center;
+	top: 100px;
+	left: 55%;
+	width: 480px;
+	height: 240px; }
+
+.prefooter a:link, .prefooter a:active, .prefooter a:visited {
+	color: #a7a9ac ; }
+
+.prefooter a:hover {
+	color: #FFFFFF ; }
+
+.footer {
+	padding: 20px 0 25px 0; }
+
+.footer p {
+	font-size: 14px;
+	color: #58595b; }
+
+.footer a:link, .footer a:active, .footer a:visited {
+	font-size: 14px;
+	color: #a7a9ac ; }
+
+.footer a:hover {
+	color: #FFF ; }
+
+/* Default Styles*/
+
+.gsc-input-box {
+	height: 24px ;
+	margin-top:3px;
+	margin-right:-5px;
+}
+
+/* teal button */
+.button-teal {
+	text-align: left;
+}
+
+.button-teal a {
+	font-family: 'Roboto', sans-serif;
+	font-size: 37px;
+	color: #ffffff;
+	font-weight:600;
+	text-transform:uppercase;
+	background-color:#91d8e4;
+	padding:15px 27px;
+	display:inline-block;
+}
+
+.button-teal a:hover {
+	color:#ffffff;
+	background-color:#cececf;
+	text-decoration:none;
+}
+
+/* green button */
+.button-green {
+	text-align: left;
+}
+
+.button-green a {
+	font-family: 'Roboto', sans-serif;
+	font-size: 37px;
+	color: #ffffff;
+	font-weight:600;
+	text-transform:uppercase;
+	background-color:#a1e0d8;
+	padding:15px 27px;
+	display:inline-block;
+}
+
+.button-green a:hover {
+	color:#ffffff;
+	background-color:#cececf;
+	text-decoration:none;
+}
+
+
+.button {
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	/* background: #c22534; */
+	padding: 15px 35px 15px 35px;
+	border-radius: 25px;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	 }
+
+.button:hover {
+	/* background: #df3445; */
+	cursor: pointer; }
+
+.buttonwhite {
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	/* background: #c22534; */
+	padding: 15px 35px 15px 35px;
+	border-radius: 25px;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border: 1px solid;
+	border-color:#FFFFFF;
+	 }
+
+.buttonwhite:hover {
+	/* background: #df3445; */
+	cursor: pointer; }
+
+.outline {
+  background-color: rgba(255,255,255,0.0); /* For browsers that do not support gradients */
+}
+.outline:hover {
+  background-color: rgba(255,255,255,1); /* For browsers that do not support gradients */
+}
+
+.buttonblue {
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	background: #315487;
+	padding: 10px 25px 10px 25px;
+	border-radius: 0px;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	border: 0; }
+
+.buttonblue:hover {
+	background: #466da5;
+	cursor: pointer; }
+
+.buttonMobile {
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	background: #282828;
+	padding: 10px 25px 10px 25px;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border: 0; }
+
+.buttonMobile:hover {
+	background: #4d4d4d;
+	cursor: pointer; }
+
+/* Tables - DataGrid */
+.DataGridTable{}
+.DataGridTable A{color: #000000; text-decoration: underline;}
+.DataGridTable A:Visited{
+	color: #000000;
+	text-decoration: underline;
+}
+.DataGridTable A:Link{
+	color: #000000;
+	text-decoration: underline;
+}
+.DataGridTable A:Hover{
+	color: #000000;
+	text-decoration: none;
+}
+
+/* Default Colors - normal with underline on hover */
+
+.Black{color: #030708; text-decoration: none;}
+a.Black:Visited{color: #030708; text-decoration: none;}
+a.Black:Link{color: #030708; text-decoration: none;}
+a.Black:Hover{color: #030708; text-decoration: underline;}
+
+.White{color: #FFFFFF; text-decoration: none;}
+a.White:Visited{color: #FFFFFF; text-decoration: none;}
+a.White:Link{color: #FFFFFF; text-decoration: none;}
+a.White:Hover{
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+
+.Red{
+	color: #da1a32;
+	text-decoration: none;
+}
+a.Red:Visited{
+	color: #da1a32;
+	text-decoration: none;
+}
+a.Red:Link{
+	color: #da1a32;
+	text-decoration: none;
+}
+a.Red:Hover{
+	color: #da1a32;
+	text-decoration: underline;
+}
+
+.Green{
+	color: #3baf49;
+	text-decoration: none;
+}
+a.Green:Visited{
+	color: #3baf49;
+	text-decoration: none;
+}
+a.Green:Link{
+	color: #3baf49;
+	text-decoration: none;
+}
+a.Green:Hover{
+	color: #3baf49;
+	text-decoration: underline;
+}
+
+.Blue{
+	color: #315487;
+	text-decoration: none;
+}
+a.Blue:Visited{
+	color: #315487;
+	text-decoration: none;
+}
+a.Blue:Link{
+	color: #315487;
+	text-decoration: none;
+}
+a.Blue:Hover{
+	color: #315487;
+	text-decoration: underline;
+}
+.Blue2{
+	color: #e0e0e0;
+	text-decoration: none;
+}
+a.Blue2:Visited{
+	color: #e0e0e0;
+	text-decoration: none;
+}
+a.Blue2:Link{
+	color: #e0e0e0;
+	text-decoration: none;
+}
+a.Blue2:Hover{
+	color: #e0e0e0;
+	text-decoration: underline;
+}
+
+.Orange{
+	color: #9c782a;
+	text-decoration: none;
+}
+a.Orange:Visited{
+	color: #9c782a;
+	text-decoration: none;
+}
+a.Orange:Link{
+	color: #9c782a;
+	text-decoration: none;
+}
+a.Orange:Hover{
+	color: #9c782a;
+	text-decoration: underline;
+}
+
+.Purple{
+	color: #4254aa;
+	text-decoration: none;
+}
+a.Purple:Visited{
+	color: #4254aa;
+	text-decoration: none;
+}
+a.Purple:Link{
+	color: #4254aa;
+	text-decoration: none;
+}
+a.Purple:Hover{
+	color: #4254aa;
+	text-decoration: underline;
+}
+
+.Yellow{color: #FFFF00; text-decoration: none;}
+a.Yellow:Visited{color: #FFFF00; text-decoration: none;}
+a.Yellow:Link{color: #FFFF00; text-decoration: none;}
+a.Yellow:Hover{color: #FFFF00; text-decoration: underline;}
+
+.Gray2{
+	color: 333333;
+	text-decoration: none;
+}
+a.Gray2:Visited{
+	color: 333333;
+	text-decoration: none;
+}
+a.Gray2:Link{
+	color: 333333;
+	text-decoration: none;
+}
+a.Gray2:Hover{
+	color: 333333;
+	text-decoration: underline;
+}
+
+.Gray{
+	color: #808080;
+	text-decoration: none;
+}
+a.Gray:Visited{
+	color: #808080;
+	text-decoration: none;
+}
+a.Gray:Link{
+	color: #808080;
+	text-decoration: none;
+}
+a.Gray:Hover{
+	color: #808080;
+	text-decoration: underline;
+}
+
+/* Default Colors - Underlined with normal on hover */
+
+.Blacku{color: #4b4b4b; text-decoration: none;}
+a.Blacku:Visited{color: #4b4b4b; text-decoration: underline;}
+a.Blacku:Link{color: #4b4b4b; text-decoration: underline;}
+a.Blacku:Hover{color: #4b4b4b; text-decoration: none;}
+
+.Whiteu{color: #FFFFFF; text-decoration: underline;}
+a.Whiteu:Visited{color: #FFFFFF; text-decoration: underline;}
+a.Whiteu:Link{color: #FFFFFF; text-decoration: underline;}
+a.Whiteu:Hover{color: #FFFFFF; text-decoration: none;}
+
+.WhiteNoU{color: #FFFFFF; text-decoration: none;}
+a.WhiteNoU:Visited{color: #FFFFFF; text-decoration: none;}
+a.WhiteNoU:Link{color: #FFFFFF; text-decoration: none;}
+a.WhiteNoU:Hover{color: #FFFFFF; text-decoration: none;}
+
+.WhiteNoUorange{color: #FFFFFF; text-decoration: none;}
+a.WhiteNoUorange:Visited{color: #FFFFFF; text-decoration: none;}
+a.WhiteNoUorange:Link{color: #FFFFFF; text-decoration: none;}
+a.WhiteNoUorange:Hover{color: #ee770c; text-decoration: none;}
+
+.Redu{
+	color: #990000;
+	text-decoration: underline;
+}
+a.Redu:Visited{
+	color: #990000;
+	text-decoration: underline;
+}
+a.Redu:Link{
+	color: #990000;
+	text-decoration: underline;
+}
+a.Redu:Hover{
+	color: #990000;
+	text-decoration: none;
+}
+
+.Greenu{
+	color: #3baf49;
+	text-decoration: underline;
+}
+a.Greenu:Visited{
+	color: #3baf49;
+	text-decoration: underline;
+}
+a.Greenu:Link{
+	color: #3baf49;
+	text-decoration: underline;
+}
+a.Greenu:Hover{
+	color: #3baf49;
+	text-decoration: none;
+}
+
+.GreenDarku{
+	color: 056503;
+	text-decoration: underline;
+}
+a.GreenDarku:Visited{
+	color: 056503;
+	text-decoration: underline;
+}
+a.GreenDarku:Link{
+	color: 056503;
+	text-decoration: underline;
+}
+a.GreenDarku:Hover{
+	color: 056503;
+	text-decoration: none;
+}
+
+.GreenLime{
+	color: b2cf7f;
+	text-decoration: none;
+}
+a.GreenLime:Visited{
+	color: b2cf7f;
+	text-decoration: none;
+}
+a.GreenLime:Link{
+	color: b2cf7f;
+	text-decoration: none;
+}
+a.GreenLime:Hover{
+	color: b2cf7f;
+	text-decoration: underline;
+}
+.GreenLight{
+	color: 649809;
+	text-decoration: none;
+}
+a.GreenLight:Visited{
+	color: 649809;
+	text-decoration: none;
+}
+a.GreenLight:Link{
+	color: 649809;
+	text-decoration: none;
+}
+a.GreenLight:Hover{
+	color: 649809;
+	text-decoration: underline;
+}
+.GreenDark{
+	color: 056503;
+	text-decoration: none;
+}
+a.GreenDark:Visited{
+	color: 056503;
+	text-decoration: none;
+}
+a.GreenDark:Link{
+	color: 056503;
+	text-decoration: none;
+}
+a.GreenDark:Hover{
+	color: 056503;
+	text-decoration: underline;
+}
+.GreenDark2{
+	color: 5a6841;
+	text-decoration: none;
+}
+a.GreenDark2:Visited{
+	color: 5a6841;
+	text-decoration: none;
+}
+a.GreenDark2:Link{
+	color: 5a6841;
+	text-decoration: none;
+}
+a.GreenDark2:Hover{
+	color: 5a6841;
+	text-decoration: underline;
+}
+
+.Blueu{
+	color: #315487;
+	text-decoration: underline;
+}
+a.Blueu:Visited{
+	color: #315487;
+	text-decoration: underline;
+}
+a.Blueu:Link{
+	color: #315487;
+	text-decoration: underline;
+}
+a.Blueu:Hover{
+	color: #315487;
+	text-decoration: none;
+}
+
+.Orangeu{color: #FF6600; text-decoration: underline;}
+a.Orangeu:Visited{color: #FF6600; text-decoration: underline;}
+a.Orangeu:Link{color: #FF6600; text-decoration: underline;}
+a.Orangeu:Hover{color: #FF6600; text-decoration: none;}
+
+.Purpleu{
+	color: #731c77;
+	text-decoration: underline;
+}
+a.Purpleu:Visited{
+	color: #731c77;
+	text-decoration: underline;
+}
+a.Purpleu:Link{
+	color: #731c77;
+	text-decoration: underline;
+}
+a.Purpleu:Hover{
+	color: #731c77;
+	text-decoration:none;
+}
+
+.Yellowu{color: #FFFF00; text-decoration: underline;}
+a.Yellowu:Visited{color: #FFFF00; text-decoration: underline;}
+a.Yellowu:Link{color: #FFFF00; text-decoration: underline;}
+a.Yellowu:Hover{color: #FFFF00; text-decoration: none;}
+
+.Grayu{color: #2d383d; text-decoration: underline;}
+a.Grayu:Visited{color: #2d383d; text-decoration: underline;}
+a.Grayu:Link{color: #2d383d; text-decoration: underline;}
+a.Grayu:Hover{color: #2d383d; text-decoration: none;}
+
+/* Global styles*/
+
+Html{
+	margin: 0px;
+	padding: 0px;
+}
+Body{margin: 0px;
+	padding: 0px;
+	line-height: 1;
+}
+
+
+
+/* This fixes the problem where IE6 adds an extra 3px margin to
+   two columns that are floated up against each other. */
+
+* html .column { overflow-x: hidden; } /* IE6 fix */
+
+
+/* Fixes incorrect styling of legend in IE6 fieldsets. */
+legend { margin-bottom:1.4em; }
+
+/* Fixes incorrect placement of numbers in ol's in IE6/7 */
+ol { margin-left:0em; }
+
+#menu {
+	padding: 0;
+	float: right;
+	margin: 10px 0 -20px 0; }
+
+#menu ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	float: right;
+	z-index: 1;
+	width:100%;
+	}
+
+#menu li
+{	margin: 15px 0px 15px 35px;
+	padding: 0;
+	padding-bottom:20px;
+	display: inline;
+	float: left;
+	z-index: 40000; }
+
+#menu li:hover > a {
+	text-decoration: none;
+	/* color: #c5c5c5 ; */
+}
+
+#menu li a
+{	display: block;
+	z-index: 40000;
+	text-decoration: none; }
+
+#menu div
+{	position: absolute;
+	visibility: hidden;
+	margin: 0;
+	z-index: 40000;
+	padding: 0;
+	background-color: #0056b8; }
+
+#menu div a {
+	position: relative;
+	z-index: 40000;
+	display: block;
+	margin: 0;
+	padding: 20px;
+	width: auto;
+	white-space: nowrap;
+	text-align: left;
+	text-decoration: none;
+	color: #ffffff;
+	opacity: 1.0;
+	font-family: Roboto;
+	font-size: 18px;}
+
+#menu div a:hover {
+	background: rgba(255, 255, 255, .20);
+	z-index: 40000;
+	color: #ffffff; }
+
+
+#ctl00 > table:nth-child(14) {
+  font-family: 'Titillium Web';
+text-transform: none;
+width: 100%;
+border-top-width: 0px;
+border-right-width: 0px;
+border-bottom-width: 0px;
+border-left-width: 0px;
+-webkit-border-horizontal-spacing: 0px;
+-webkit-border-vertical-spacing: 0px;
+padding-top: 30px;
+padding-bottom: 30px;
+background-color: #26436d;
+}
+body > main > table:nth-child(11) > tbody > tr > td > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td:nth-child(1) > h4:nth-child(1){
+  text-transform: none;
+font-family: 'Titillium Web', sans-serif;
+font-size: 14px;
+color: #d7d7d7;
+font-weight: normal;
+line-height: 24px;
+margin: 0;
+padding: 0;
+border: 0;
+vertical-align: baseline;
+}
+body > main > table:nth-child(11) > tbody > tr > td > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td:nth-child(1) > h4:nth-child(2){
+    text-transform: none;
+font-family: 'Titillium Web', sans-serif;
+font-size: 14px;
+color: #d7d7d7;
+font-weight: normal;
+line-height: 24px;
+margin: 0;
+padding: 0;
+border: 0;
+vertical-align: baseline;
+}

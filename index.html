@@ -4,18 +4,464 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css">
-
+  <link rel="icon" href="Assets/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="Assets/favicon.ico" type="image/x-icon">
 
   <link href="styles.css" rel="stylesheet">
   <link href="responsivestyles.css" rel="stylesheet">
+  <link href="gc-og-style.css" rel="stylesheet">
+  <script language="javascript">
+    // Copyright 2006-2007 javascript-array.com
+
+    var timeout = 500;
+    var closetimer = 0;
+    var ddmenuitem = 0;
+
+    // open hidden layer
+    function mopen(id) {
+      // cancel close timer
+      mcancelclosetime();
+
+      // close old layer
+      if (ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+
+      // get new layer and show it
+      ddmenuitem = document.getElementById(id);
+      ddmenuitem.style.visibility = 'visible';
+
+    }
+    // close showed layer
+    function mclose() {
+      if (ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+    }
+
+    // go close timer
+    function mclosetime() {
+      closetimer = window.setTimeout(mclose, timeout);
+    }
+
+    // cancel close timer
+    function mcancelclosetime() {
+      if (closetimer) {
+        window.clearTimeout(closetimer);
+        closetimer = null;
+      }
+    }
+
+    // close layer when click-out
+    document.onclick = mclose;
+
+    function MM_findObj(n, d) { //v4.01
+      var p, i, x;
+      if (!d) d = document;
+      if ((p = n.indexOf("?")) > 0 && parent.frames.length) {
+        d = parent.frames[n.substring(p + 1)].document;
+        n = n.substring(0, p);
+      }
+      if (!(x = d[n]) && d.all) x = d.all[n];
+      for (i = 0; !x && i < d.forms.length; i++) x = d.forms[i][n];
+      for (i = 0; !x && d.layers && i < d.layers.length; i++) x = MM_findObj(n, d.layers[i].document);
+      if (!x && d.getElementById) x = d.getElementById(n);
+      return x;
+    }
+
+    function MM_swapImgRestore() { //v3.0
+      var i, x, a = document.MM_sr;
+      for (i = 0; a && i < a.length && (x = a[i]) && x.oSrc; i++) x.src = x.oSrc;
+    }
+
+    function MM_preloadImages() { //v3.0
+      var d = document;
+      if (d.images) {
+        if (!d.MM_p) d.MM_p = new Array();
+        var i, j = d.MM_p.length,
+          a = MM_preloadImages.arguments;
+        for (i = 0; i < a.length; i++)
+          if (a[i].indexOf("#") != 0) {
+            d.MM_p[j] = new Image;
+            d.MM_p[j++].src = a[i];
+          }
+      }
+    }
+
+    function MM_swapImage() { //v3.0
+      var i, j = 0,
+        x, a = MM_swapImage.arguments;
+      document.MM_sr = new Array;
+      for (i = 0; i < (a.length - 2); i += 3)
+        if ((x = MM_findObj(a[i])) != null) {
+          document.MM_sr[j++] = x;
+          if (!x.oSrc) x.oSrc = x.src;
+          x.src = a[i + 2];
+        }
+    }
+
+  </script>
+  <script language="javascript">
+    // Copyright 2006-2007 javascript-array.com
+
+    var timeout = 500;
+    var closetimer = 0;
+    var ddmenuitem = 0;
+
+    // open hidden layer
+    function mopen(id) {
+      // cancel close timer
+      mcancelclosetime();
+
+      // close old layer
+      if (ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+
+      // get new layer and show it
+      ddmenuitem = document.getElementById(id);
+      ddmenuitem.style.visibility = 'visible';
+
+    }
+    // close showed layer
+    function mclose() {
+      if (ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+    }
+
+    // go close timer
+    function mclosetime() {
+      closetimer = window.setTimeout(mclose, timeout);
+    }
+
+    // cancel close timer
+    function mcancelclosetime() {
+      if (closetimer) {
+        window.clearTimeout(closetimer);
+        closetimer = null;
+      }
+    }
+
+    // close layer when click-out
+    document.onclick = mclose;
+
+    function MM_preloadImages() { //v3.0
+      var d = document;
+      if (d.images) {
+        if (!d.MM_p) d.MM_p = new Array();
+        var i, j = d.MM_p.length,
+          a = MM_preloadImages.arguments;
+        for (i = 0; i < a.length; i++)
+          if (a[i].indexOf("#") != 0) {
+            d.MM_p[j] = new Image;
+            d.MM_p[j++].src = a[i];
+          }
+      }
+    }
+
+    function MM_findObj(n, d) { //v4.01
+      var p, i, x;
+      if (!d) d = document;
+      if ((p = n.indexOf("?")) > 0 && parent.frames.length) {
+        d = parent.frames[n.substring(p + 1)].document;
+        n = n.substring(0, p);
+      }
+      if (!(x = d[n]) && d.all) x = d.all[n];
+      for (i = 0; !x && i < d.forms.length; i++) x = d.forms[i][n];
+      for (i = 0; !x && d.layers && i < d.layers.length; i++) x = MM_findObj(n, d.layers[i].document);
+      if (!x && d.getElementById) x = d.getElementById(n);
+      return x;
+    }
+
+    function MM_swapImgRestore() { //v3.0
+      var i, x, a = document.MM_sr;
+      for (i = 0; a && i < a.length && (x = a[i]) && x.oSrc; i++) x.src = x.oSrc;
+    }
+
+    function MM_swapImage() { //v3.0
+      var i, j = 0,
+        x, a = MM_swapImage.arguments;
+      document.MM_sr = new Array;
+      for (i = 0; i < (a.length - 2); i += 3)
+        if ((x = MM_findObj(a[i])) != null) {
+          document.MM_sr[j++] = x;
+          if (!x.oSrc) x.oSrc = x.src;
+          x.src = a[i + 2];
+        }
+    }
+
+  </script>
 </head>
 
 <body>
   <main>
+    <table class="mainMenu" width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tbody>
+        <tr>
+          <td><img src="Assets/BG-01.jpg" alt="Job Seekers and Employers Career Center" width="100%" height="5" style="top:0;"></td>
+        </tr>
+        <tr>
+          <td>
+            <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+              <tbody>
+                <tr>
+                  <td width="10"><img src="Graphics/spacer.gif" width="10" height="10"></td>
+                  <td width="280" valign="top"><a href="https://www.careersourcegc.com"><img src="Assets/Logo-CareerSource-Gulf-Coast-Panama-City-FL-Mobile.jpg" alt="CareerSource Gulf Coast for Job Seekers and Employers" width="280" height="140"
+                        border="0"></a>
+                  </td>
+                  <td valign="top">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tbody>
+                        <tr>
+                          <td>
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                              <tbody>
+                                <tr>
+                                  <td>
+                                    <div align="right" style="margin-top:25px;"><a href="https://www.facebook.com/CareerSourceGulfCoast/" target="_blank" onmouseover="MM_swapImage('SNfb','','Assets/icon-facebook-hover.png',1)"
+                                        onmouseout="MM_swapImgRestore()"><img src="Assets/icon-facebook.png" alt="Join CareerSource Gulf Coast on Facebook" name="SNfb" width="36" height="36" border="0"></a>&nbsp;&nbsp;<a
+                                        href="https://twitter.com/careersourcegc" target="_blank" onmouseover="MM_swapImage('SNtw','','Assets/icon-twitter-hover.png',1)" onmouseout="MM_swapImgRestore()"><img src="Assets/icon-twitter.png"
+                                          alt="Follow CareerSource Gulf Coast on Twitter" name="SNtw" width="36" height="36" border="0"></a>&nbsp;&nbsp;<a href="https://www.linkedin.com/company/workforce-center" target="_blank"
+                                        onmouseover="MM_swapImage('SNli','','Assets/icon-linkedin-hover.png',1)" onmouseout="MM_swapImgRestore()"><img src="Assets/icon-linkedin.png" alt="Connect with CareerSource Gulf Coast on LinkedIn" name="SNli"
+                                          width="36" height="36" border="0"></a></div>
+                                  </td>
+                                  <td width="275">
+                                    <div align="right" style="margin-top:25px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.careersourcegc.com/Contact-Us-General-Inquiry.aspx" class="button WhiteNoU grad">Have a Question?</a></div>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div align="right">
+                              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tbody>
+                                  <tr>
+                                    <td width="100%" valign="top">
+                                      <div class="nav">
+                                        <ul id="menu">
+                                          <li><a href="https://www.careersourcegc.com/">Home</a></li>
+                                          <li onmouseout="mclose('m2')" onmouseover="mopen('m2')"><a href="https://www.careersourcegc.com/Job-Seekers-Employment-Services.aspx">Job Seekers</a>
+                                            <div id="m2" onmouseover="mcancelclosetime()" onmouseout="mclosetime()" style="margin: 14px 0px 0px -20px; width: 270px; border-top: 20px; visibility: hidden;">
+                                              <a href="https://www.careersourcegc.com/Job-Seekers-Employment-Services.aspx">Employment Services</a>
+                                              <a href="https://www.careersourcegc.com/Job-Seekers-Hot-Jobs-Hiring-Events.aspx">Hot Jobs &amp; Hiring Events</a>
+                                              <a href="https://www.careersourcegc.com/job-seekers-career-expo.aspx">Career Expo</a>
+                                              <a href="https://www.careersourcegc.com/Job-Seekers-Training-Services.aspx">Workforce Training Services</a>
+                                              <a href="https://www.careersourcegc.com/Job-Seekers-Reemployment-Assistance.aspx">Reemployment Assistance</a>
+                                              <a href="https://www.careersourcegc.com/Job-Seekers-Special-Programs.aspx">Special Programs</a>
+                                              <a href="https://www.careersourcegc.com/Job-Seekers-Public-Assistance.aspx">Public Assistance</a>
+                                              <a href="https://www.careersourcegc.com/resource-room.aspx">More Resources</a>
+
+                                            </div>
+                                          </li>
+                                          <li onmouseout="mclose('m3')" onmouseover="mopen('m3')"><a href="https://www.careersourcegc.com/Employers-Free-Business-Services.aspx">Employers</a>
+                                            <div id="m3" onmouseover="mcancelclosetime()" onmouseout="mclosetime()" style="margin: 14px 0px 0 -20px; width:290px; border-top: 20px;">
+                                              <a href="https://www.careersourcegc.com/Employers-Free-Business-Services.aspx">Free Business Services</a>
+                                              <a href="https://www.careersourcegc.com/Employers-Training-Programs-Incentives.aspx">Training Programs &amp; Incentives</a>
+                                              <a href="https://www.careersourcegc.com/Employers-Hiring-Special-Populations.aspx">Hiring Special Populations</a>
+
+                                            </div>
+                                          </li>
+                                          <li onmouseout="mclose('m4')" onmouseover="mopen('m4')"><a href="https://www.careersourcegc.com/Special-Projects.aspx">Special Projects</a>
+                                            <div id="m4" onmouseover="mcancelclosetime()" onmouseout="mclosetime()" style="margin: 14px 0px 0 -20px; width:240px; border-top: 20px;">
+                                            </div>
+                                          </li>
+                                          <li onmouseout="mclose('m5')" onmouseover="mopen('m5')"><a href="https://www.careersourcegc.com/Newsroom-News.aspx">Newsroom</a>
+                                            <div id="m5" onmouseover="mcancelclosetime()" onmouseout="mclosetime()" style="margin: 14px 0px 0 -20px; width:240px; border-top: 20px;">
+                                              <a href="https://www.careersourcegc.com/Newsroom-News.aspx">News &amp; Announcements</a>
+                                              <a href="https://www.careersourcegc.com/Newsroom-Events.aspx">Events</a>
+                                              <a href="https://www.careersourcegc.com/Newsroom-RFPs-Notices.aspx">RFPs &amp; Notices</a>
+                                            </div>
+                                          </li>
+                                          <li onmouseout="mclose('m6')" onmouseover="mopen('m6')"><a href="https://www.careersourcegc.com/About-CareerSource-Services-By-County.aspx">About Us</a>
+                                            <div id="m6" onmouseover="mcancelclosetime()" onmouseout="mclosetime()" style="margin: 14px 0px 0 -130px; width:220px; border-top: 20px;">
+                                              <a href="https://www.careersourcegc.com/About-CareerSource-Services-By-County.aspx">Services By County</a>
+                                              <a href="https://www.careersourcegc.com/About-CareerSource-Gulf-Coast-Board.aspx">Gulf Coast Board</a>
+                                              <a href="https://www.careersourcegc.com/About-CareerSource-Gulf-Coast-Job-Center.aspx">Gulf Coast Job Center</a>
+                                              <a href="https://www.careersourcegc.com/About-CareerSource-Helpful-Links.aspx">Helpful Links</a>
+                                            </div>
+                                          </li>
+                                          <li onmouseout="mclose('m7')" onmouseover="mopen('m7')"><a href="https://www.careersourcegc.com/Contact-Us-General-Inquiry.aspx">Contact Us</a>
+                                            <div id="m7" onmouseover="mcancelclosetime()" onmouseout="mclosetime()" style="margin: 14px 0px 0 -205px; width:310px; border-top: 20px;">
+                                              <a href="https://www.careersourcegc.com/Contact-Us-General-Inquiry.aspx">General Inquiry</a>
+                                              <a href="https://www.careersourcegc.com/Contact-Us-Satisfaction-Survey.aspx">Satisfaction Survey</a>
+
+                                              <a href="https://www.careersourcegc.com/Contact-Us-Submit-a-Success-Story.aspx">Submit a Success Story</a>
+                                            </div>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                  <td width="10"><img src="Graphics/spacer.gif" width="10" height="10"></td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+
+    </table>
+    <div class="mobileTop">
+      <script src="//code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+      <script>
+        (function($) {
+          $(document).ready(function() {
+            $('#cssmenu li.has-sub>a').on('click', function() {
+              $(this).removeAttr('href');
+              var element = $(this).parent('li');
+              if (element.hasClass('open')) {
+                element.removeClass('open');
+                element.find('li').removeClass('open');
+                element.find('ul').slideUp();
+              } else {
+                element.addClass('open');
+                element.children('ul').slideDown();
+                element.siblings('li').children('ul').slideUp();
+                element.siblings('li').removeClass('open');
+                element.siblings('li').find('li').removeClass('open');
+                element.siblings('li').find('ul').slideUp();
+              }
+            });
+
+            $('#cssmenu>ul>li.has-sub>a').append('<span class="holder"></span>');
+
+            (function getColor() {
+              var r, g, b;
+              var textColor = $('#cssmenu').css('color');
+              textColor = textColor.slice(4);
+              r = textColor.slice(0, textColor.indexOf(','));
+              textColor = textColor.slice(textColor.indexOf(' ') + 1);
+              g = textColor.slice(0, textColor.indexOf(','));
+              textColor = textColor.slice(textColor.indexOf(' ') + 1);
+              b = textColor.slice(0, textColor.indexOf(')'));
+              var l = rgbToHsl(r, g, b);
+              if (l > 0.7) {
+                $('#cssmenu>ul>li>a').css('text-shadow', '0 1px 1px rgba(0, 0, 0, .35)');
+                $('#cssmenu>ul>li>a>span').css('border-color', 'rgba(0, 0, 0, .35)');
+              } else {
+                $('#cssmenu>ul>li>a').css('text-shadow', '0 1px 0 rgba(255, 255, 255, .35)');
+                $('#cssmenu>ul>li>a>span').css('border-color', 'rgba(255, 255, 255, .35)');
+              }
+            })();
+
+            function rgbToHsl(r, g, b) {
+              r /= 255, g /= 255, b /= 255;
+              var max = Math.max(r, g, b),
+                min = Math.min(r, g, b);
+              var h, s, l = (max + min) / 2;
+
+              if (max == min) {
+                h = s = 0;
+              } else {
+                var d = max - min;
+                s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
+                switch (max) {
+                  case r:
+                    h = (g - b) / d + (g < b ? 6 : 0);
+                    break;
+                  case g:
+                    h = (b - r) / d + 2;
+                    break;
+                  case b:
+                    h = (r - g) / d + 4;
+                    break;
+                }
+                h /= 6;
+              }
+              return l;
+            }
+          });
+        })(jQuery);
+
+      </script>
+      <table class="mobileLogo" width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tbody>
+          <tr>
+            <td><img id="gradline" src="Assets/BG-01.jpg" alt="Job Seekers and Employers Career Center" width="100%" height="5"></td>
+          </tr>
+          <tr>
+            <td>
+              <div align="center"><img src="Assets/Logo-CareerSource-Gulf-Coast-Panama-City-FL-Mobile.jpg" alt="CareerSource Gulf Coast for Job Seekers and Employers" width="75%" height="auto">
+              </div>
+              <div align="center" style="margin-top:25px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.careersourcegc.com/mobile/Contact-Us-General-Inquiry.aspx" class="button WhiteNoU grad">Have a Question?</a></div>
+              <p>&nbsp;</p>
+              <p>&nbsp;</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="mobileMenu" width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tbody>
+          <tr>
+            <td>
+              <div id="cssmenu">
+                <ul>
+                  <li class="active has-sub last"><a href="https://www.careersourcegc.com/mobile/default.aspx" style="text-shadow: rgba(255, 255, 255, 0.35) 0px 1px 0px;"><span
+                        style="text-shadow: rgba(120, 136, 102, 0) 0px 1px 1px; border-color: rgba(255, 255, 255, 0.35);">Browse our
+                        site...</span><span class="holder" style="border-color: rgba(255, 255, 255, 0.35);"></span></a>
+                    <ul>
+                      <li><a href="https://www.careersourcegc.com/mobile/default.aspx">Home</a></li>
+                      <li class="has-sub"><a href="https://www.careersourcegc.com/mobile/job-seekers-employment-services.aspx">Job Seekers</a>
+                        <ul>
+                          <li><a href="https://www.careersourcegc.com/mobile/job-seekers-employment-services.aspx">Employment Services</a></li>
+                          <li><a href="https://www.careersourcegc.com/mobile/job-seekers-hot-jobs-hiring-events.aspx">Hot Jobs &amp; Hiring Events</a></li>
+                          <li><a href="https://www.careersourcegc.com/mobile/job-seekers-career-expo.aspx">Career Expo</a></li>
+                          <li><a href="https://www.careersourcegc.com/mobile/job-seekers-training-services.aspx">Job Seeker Training Services</a></li>
+                          <li><a href="https://www.careersourcegc.com/mobile/job-seekers-reemployment-assistance.aspx">Reemployment Assistance</a></li>
+                          <li><a href="https://www.careersourcegc.com/mobile/job-seekers-special-programs.aspx">Special Programs</a></li>
+                          <li><a href="https://www.careersourcegc.com/mobile/Job-Seekers-Public-Assistance.aspx">Public Assistance</a></li>
+
+                        </ul>
+                      </li>
+                      <li class="has-sub"><a href="https://www.careersourcegc.com/mobile/employers-free-business-services.aspx">Employers</a>
+                        <ul>
+                          <li><a href="https://www.careersourcegc.com/mobile/employers-free-business-services.aspx">Free Business Services</a></li>
+                          <li><a href="https://www.careersourcegc.com/mobile/employers-training-programs-incentives.aspx">Training Programs &amp; Incentives</a></li>
+                          <li><a href="https://www.careersourcegc.com/mobile/employers-hiring-special-populations.aspx">Hiring Special Populations</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="https://www.careersourcegc.com/mobile/special-projects.aspx">Special Projects</a></li>
+                      <li class="has-sub"><a href="https://www.careersourcegc.com/mobile/newsroom-news.aspx">Newsroom</a>
+                        <ul>
+                          <li><a href="https://www.careersourcegc.com/mobile/newsroom-news.aspx">Newsroom &amp; Announcements</a></li>
+                          <li><a href="https://www.careersourcegc.com/mobile/newsroom-events.aspx">Events</a></li>
+                          <li><a href="https://www.careersourcegc.com/mobile/newsroom-rfps-notices.aspx">RFPs &amp; Notices</a></li>
+                        </ul>
+                      </li>
+                      <li class="has-sub"><a href="https://www.careersourcegc.com/mobile/about-careersource-services-by-county.aspx">About Us</a>
+                        <ul>
+                          <li><a href="https://www.careersourcegc.com/mobile/about-careersource-services-by-county.aspx">Services By County</a></li>
+                          <li><a href="https://www.careersourcegc.com/mobile/about-careersource-gulf-coast-board.aspx">Gulf Coast Board</a></li>
+                          <li><a href="https://www.careersourcegc.com/mobile/about-careersource-gulf-coast-job-center.aspx">Gulf Coast Job Center</a></li>
+                          <li><a href="https://www.careersourcegc.com/mobile/about-careersource-helpful-links.aspx">Helpful Links</a></li>
+                        </ul>
+                      </li>
+                      <li class="has-sub"><a href="https://www.careersourcegc.com/mobile/contact-us-general-inquiry.aspx">Contact Us</a>
+                        <ul>
+                          <li><a href="https://www.careersourcegc.com/mobile/contact-us-general-inquiry.aspx">General Inquiry</a></li>
+                          <li><a href="https://www.careersourcegc.com/mobile/Contact-Us-Satisfaction-Survey.aspx">Satisfaction Survey</a></li>
+
+                          <li><a href="https://www.careersourcegc.com/mobile/contact-us-submit-a-success-story.aspx">Submit a Success Story</a></li>
+                        </ul>
+                      </li>
+
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
     <div class="hero-holder">
       <div class="hero">
         <div class="hero-text position-relative ">
-          <h1>The Military<br /> Family Employment<br /> Program</h1>
+          <h1 class="hero-h1">The Military<br /> Family Employment<br /> Program</h1>
           <p class="hero-tag">There's Work for You Here</p>
           <button class="hero-button">
             <a href="https://www.careersourcegc.com/Contact-Us-General-Inquiry.aspx">Contact Us</a>
@@ -144,8 +590,8 @@
         <div class="darkblueContainer">
           <div class="darkBlueheading-text">
             <h2>Start your job search by registering
-              on <em><a href="employflorida.com" target="_blank">EmployFlorida.com.</a></em></h2>
-            <button class="darkblueContainer-button"><a href="employflorida.com" target="_blank">Search Jobs</a>
+              on <em><a href="https://www.employflorida.com" target="_blank">EmployFlorida.com.</a></em></h2>
+            <button class="darkblueContainer-button"><a href="https://www.employflorida.com" target="_blank">Search Jobs</a>
             </button>
           </div>
           <p>Our partners and additional resources for military families include:
@@ -179,7 +625,7 @@
     <div class="orangeArrow">
       <h2>Veteran or Veteran’s Family Member?</h2>
       <p class="orangeArrowText">
-        There’s a jobs portal just for you at <br /><em><a href="Veterans.EmployFlorida.com">Veterans.EmployFlorida.com.</a></em> Thank you for your service.
+        There’s a jobs portal just for you at <br /><em><a href="https://Veterans.EmployFlorida.com">Veterans.EmployFlorida.com.</a></em> Thank you for your service.
       </p>
       <br />
     </div>
@@ -193,6 +639,119 @@
       <h3>We’re glad you’re here and honored to assist you and your family.
       </h3>
       <img class="tri-img" src="Assets/CareerSourceGulfCoastTriangleImage.png" />
+    </div>
+    <div class="footer-desk">
+      <table class="footer-hide" width="100%" border="0" cellspacing="0" cellpadding="0" style="background-color:#f4f4f4; ">
+        <tbody>
+          <tr>
+            <td>
+              <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+                <tbody>
+                  <tr>
+                    <td width="10"><img src="Graphics/spacer.gif" width="10" height="10"></td>
+                    <td valign="top">
+                      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tbody>
+                          <tr>
+                            <td width="270"><a href="https://www.careersourcegc.com/default.aspx"><img src="Assets/Logo-CareerSource-Gulf-Coast-Panama-City-FL-footer2.png" alt="CareerSource Gulf Coast" width="270" height="150" border="0"></a></td>
+                            <td>
+                              <p style="font-size:14px; color:#898989;"><em>CareerSource Gulf Coast is an equal employer/program. Auxiliary aids and services are available upon request to individuals with disabilities. All voice telephone numbers on
+                                  this website may be reached by persons using TTY/TDD equipment via the Florida Relay Service at 711.</em></p>
+                            </td>
+                            <td width="274"><a href="http://www.careeronestop.org/site/american-job-center.aspx" target="_blank"><img src="Assets/Logo-American-Job-Center.png" alt="American Job Center" width="274" height="150" border="0"></a></td>
+                            <td width="106"><a href="https://www.employflorida.com/vosnet/Default.aspx" target="_blank"><img src="Assets/Logo-Employ-Florida.png" alt="Employ Florida" width="106" height="150" border="0"></a></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                    <td width="10"><img src="Graphics/spacer.gif" width="10" height="10"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="footer-hide" width="100%" border="0" cellspacing="0" cellpadding="0" style="padding-top:30px; padding-bottom:30px; background-color:#26436d; ">
+        <tbody>
+          <tr>
+            <td>
+              <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+                <tbody>
+                  <tr>
+                    <td width="10"><img src="Graphics/spacer.gif" width="10" height="10"></td>
+                    <td valign="top">
+                      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tbody>
+                          <tr>
+                            <td width="50%" valign="middle">
+                              <h4>Copyright © 2020 CareerSource Gulf Coast. <a href="https://www.careersourcegc.com/Privacy-Policy.aspx" class="White">Privacy Policy</a> | <a href="https://www.careersourcegc.com/Staff-Portal.aspx" class="White">Staff
+                                  Portal</a> | <a href="https://www.careersourcegc.com/Login.aspx" class="White" target="_blank">Admin Login</a></h4>
+                              <h4>Site developed by <a href="http://www.panamacitywebsitedesign.net" target="_blank" class="White">Aaron Rich Digital Marketing &amp; IT Services</a></h4>
+                            </td>
+                            <td valign="top">
+                              <div align="right"><a href="https://www.facebook.com/CareerSourceGulfCoast/" target="_blank" onmouseover="MM_swapImage('SNfbF','','Assets/icon-facebook-hover.png',1)" onmouseout="MM_swapImgRestore()"><img
+                                    src="Assets/icon-facebook.png" alt="Join CareerSource Gulf Coast on Facebook" name="SNfbF" width="36" height="36" border="0"></a>&nbsp;&nbsp;<a href="https://twitter.com/careersourcegc" target="_blank"
+                                  onmouseover="MM_swapImage('SNtwF','','Assets/icon-twitter-hover.png',1)" onmouseout="MM_swapImgRestore()"><img src="Assets/icon-twitter.png" alt="Follow CareerSource Gulf Coast on Twitter" name="SNtwF" width="36"
+                                    height="36" border="0"></a>&nbsp;&nbsp;<a href="https://www.linkedin.com/company/workforce-center" target="_blank" onmouseover="MM_swapImage('SNliF','','Assets/icon-linkedin-hover.png',1)"
+                                  onmouseout="MM_swapImgRestore()"><img src="Assets/icon-linkedin.png" alt="Connect with CareerSource Gulf Coast on LinkedIn" name="SNliF" width="36" height="36" border="0"></a></div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                    <td width="10"><img src="Graphics/spacer.gif" width="10" height="10"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="footerMobile-1">
+      <table class="footer-mob" width="100%" border="0" cellspacing="0" cellpadding="0" style="padding-top:30px; padding-bottom:30px; padding-left:30px; padding-right:30px; background-color:#f4f4f4;">
+        <tbody>
+          <tr>
+            <td>
+              <p align="center" style="font-size:14px; color:#898989; margin-bottom:0px;"><em>CareerSource Gulf Coast is an equal employer/program. Auxiliary aids and services are available upon request to individuals with disabilities. All voice
+                  telephone numbers on this website may be reached by persons using TTY/TDD equipment via the Florida Relay Service at 711.</em></p>
+              <p align="center" style="font-size:14px; color:#898989; margin-bottom:0px;">&nbsp;</p>
+              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tbody>
+                  <tr>
+                    <td width="50%">
+                      <div align="center"><a href="http://www.careeronestop.org/site/american-job-center.aspx" target="_blank"><img src="Assets/Logo-American-Job-Center.png" alt="American Job Center" width="80%" height="auto" border="0"></a>
+                      </div>
+                    </td>
+                    <td width="50%">
+                      <div align="center"><a href="https://www.employflorida.com/vosnet/Default.aspx" target="_blank"><img src="Assets/Logo-Employ-Florida.png" alt="Employ Florida" width="50%" height="auto" border="0"></a>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="footer-mob" width="100%" border="0" cellspacing="0" cellpadding="0" style="padding-top:30px; padding-bottom:30px; padding-left:30px; padding-right:30px; background-color:#26436d;">
+        <tbody>
+          <tr>
+            <td>
+              <div align="center">
+                <h4>Copyright © 2020 CareerSource Gulf Coast. <a href="Privacy-Policy.aspx" class="White">Privacy Policy</a></h4>
+                <h4 style="margin-bottom:10px;">Site developed by <a href="http://www.panamacitywebsitedesign.net" target="_blank" class="White">Aaron Rich Digital Marketing &amp; IT Services</a></h4>
+                <a href="https://www.facebook.com/CareerSourceGulfCoast/" target="_blank" onmouseover="MM_swapImage('SNfbF','','Assets/icon-facebook-hover.png',1)" onmouseout="MM_swapImgRestore()"><img src="Assets/icon-facebook.png"
+                    alt="Join CareerSource Gulf Coast on Facebook" name="SNfbF" width="36" height="36" border="0"></a>&nbsp;&nbsp;<a href="https://twitter.com/careersourcegc" target="_blank"
+                  onmouseover="MM_swapImage('SNtwF','','Assets/icon-twitter-hover.png',1)" onmouseout="MM_swapImgRestore()"><img src="Assets/icon-twitter.png" alt="Follow CareerSource Gulf Coast on Twitter" name="SNtwF" width="36" height="36"
+                    border="0"></a>&nbsp;&nbsp;<a href="https://www.linkedin.com/company/workforce-center" target="_blank" onmouseover="MM_swapImage('SNliF','','Assets/icon-linkedin-hover.png',1)" onmouseout="MM_swapImgRestore()"><img
+                    src="Assets/icon-linkedin.png" alt="Connect with CareerSource Gulf Coast on LinkedIn" name="SNliF" width="36" height="36" border="0"></a>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </main>
 </body>

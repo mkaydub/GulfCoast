@@ -78,7 +78,23 @@
   }
 
 }
-@media only screen and (max-width:768px){
+
+@media only screen  and (max-width:769px){
+  .mainMenu {
+    display:none;
+  }
+
+.footer-hide{
+    display:none;
+  }
+.mobileLogo {
+  line-height: 1;
+  text-align: left;
+  font-weight: normal;
+  font-family: 'Titillium Web';
+  text-transform: none;
+}
+
 .arrowText{
   margin-top: -20px;
       width: 100%;
@@ -186,9 +202,6 @@ iframe{
   max-width:100%;
   margin:0 auto;
 }
-}
-@media only screen  and (max-width:769px){
-
 h1{
   font-size:30px;
 }
@@ -262,8 +275,10 @@ width:50%;
   width:100%;
   display: block;
 }
+
 }
 @media only screen and (max-width:400px){
+
 .darkblueContainer h2 {
   width:100%;
 }
@@ -301,4 +316,195 @@ padding:0.2rem;
 .video-section{
   margin:0 auto;
 }
+
+}
+
+@media only screen and (max-width:769px){
+
+/*mobilemenu*/
+.mobileTop{
+  display:block;
+}
+#cssmenu,
+#cssmenu ul,
+#cssmenu ul li,
+#cssmenu ul li a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  line-height: 1;
+  display: block;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#cssmenu {
+  width: 100%;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #282828;
+  text-align:center;
+}
+#cssmenu ul ul {
+  display: none;
+}
+.align-right {
+  float: right;
+}
+#cssmenu > ul > li > a {
+  padding: 15px 20px;
+  border-left: 0px solid #636363;
+  border-right: 0px solid #636363;
+  border-top: 0px solid #636363;
+  cursor: pointer;
+  z-index: 2;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #282828;
+  text-shadow: 0 1px 1px rgba(120, 136, 102, 0.0);
+  background: #f4f4f4;
+}
+#cssmenu > ul > li > a:hover,
+#cssmenu > ul > li.active > a,
+#cssmenu > ul > li.open > a {
+  color: #636363;
+  background: #f4f4f4;
+}
+#cssmenu > ul > li.open > a {
+  border-bottom: 0px solid #636363;
+}
+#cssmenu > ul > li:last-child > a,
+#cssmenu > ul > li.last > a {
+  border-bottom: 0px solid #636363;
+}
+.holder {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.holder::after,
+.holder::before {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 6px;
+  height: 6px;
+  right: 20px;
+  z-index: 10;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+.holder::after {
+  top: 17px;
+  border-top: 2px solid #636363;
+  border-left: 2px solid #636363;
+}
+#cssmenu > ul > li > a:hover > span::after,
+#cssmenu > ul > li.active > a > span::after,
+#cssmenu > ul > li.open > a > span::after {
+  border-color: #636363;
+}
+.holder::before {
+  top: 18px;
+  border-top: 2px solid;
+  border-left: 2px solid;
+  border-top-color: inherit;
+  border-left-color: inherit;
+}
+#cssmenu ul ul li a {
+  cursor: pointer;
+  border-bottom: 1px solid #0f366f;
+  padding: 10px 20px;
+  z-index: 1;
+  text-decoration: none;
+  font-size: 13px;
+  color: #ffffff;
+  background: #0056b8;
+  ;
+}
+#cssmenu ul ul li:hover > a,
+#cssmenu ul ul li.open > a,
+#cssmenu ul ul li.active > a {
+  color: #a6caf4;
+}
+#cssmenu ul ul li:first-child > a {
+  box-shadow: none;
+}
+#cssmenu ul ul ul li:first-child > a {
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+#cssmenu ul ul ul li a {
+  padding-left: 30px;
+}
+#cssmenu > ul > li > ul > li:last-child > a,
+#cssmenu > ul > li > ul > li.last > a {
+  border-bottom: 0;
+}
+#cssmenu > ul > li > ul > li.open:last-child > a,
+#cssmenu > ul > li > ul > li.last.open > a {
+  border-bottom: 1px solid #636363;
+}
+#cssmenu > ul > li > ul > li.open:last-child > ul > li:last-child > a {
+  border-bottom: 0;
+}
+#cssmenu ul ul li.has-sub > a::after {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 5px;
+  height: 5px;
+  right: 20px;
+  z-index: 10;
+  top: 11.5px;
+  border-top: 2px solid #eeeeee;
+  border-left: 2px solid #eeeeee;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+#cssmenu ul ul li.active > a::after,
+#cssmenu ul ul li.open > a::after,
+#cssmenu ul ul li > a:hover::after {
+  border-color: #636363;
+}
+.footer-m {
+  text-align: center;
+}
+
+.footerMobile-1 {
+  display: block;
+  max-width: 100%;
+}
+
+.footer-hide {
+  display:none;
+}
+body > main > div.footerMobile-1 > table:nth-child(1) > tbody > tr > td > p:nth-child(1) > em {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 16px;
+
+  margin: 0px;
+  line-height: 26px;
+}
+
+body > main > div.footerMobile-1 > table:nth-child(2) {
+  color:#fff;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 16px;
+  margin: 0px;
+  line-height: 26px;
+}
+body > main > div.footerMobile-1 > table:nth-child(2) a {
+  color:#fff;
+}
+
 }

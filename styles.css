@@ -9,7 +9,7 @@ body {
   width:100%;
 }
 
-h1 {
+.hero-h1 {
   text-align:center;
   font-family:'Proxima Nova',sans-serif;
   font-size:54px;
@@ -435,4 +435,27 @@ line-height: 1;
 
 .bottomPhotoMobile {
   display:none;
+}
+
+.mobileTop {
+  display:none;
+}
+
+.footerMobile-1 {
+display:none;
+}
+body > main > div.footer-desk > table:nth-child(2) > tbody > tr > td > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td:nth-child(1) {
+color:#fff;
+font-family: 'Titillium Web', sans-serif;
+font-size: 16px;
+margin: 0px;
+line-height: 26px;
+
+}
+body > main > div.footer-desk > table:nth-child(1) > tbody > tr > td > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td:nth-child(2) > p > em {
+font-family: 'Titillium Web', sans-serif;
+font-size: 16px;
+
+margin: 0px;
+line-height: 26px;
 }
